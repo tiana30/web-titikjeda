@@ -5,31 +5,34 @@ import ProofReading from './ProofReading/ProofReading';
 import Podcast from './Podcast/Podcast';
 import NavBar from './Layout/NavBar';
 import FooterBar from './Layout/FooterBar';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 
 function App() {
   return (
     <Fragment>
-  
-    <Router>
+
+   
      <NavBar />
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='/services'>
-          <Services />
-        </Route>
-        <Route exact path='/proofreading'>
-          <ProofReading />
-        </Route>
-        <Route exact path='/Podcast'>
-          <Podcast />
-        </Route>
-        </Switch>
+     <Routes>
+      {/* Home Route */}
+      <Route path='/' element={<Home />} />
+
+      {/* Services Route */}
+      <Route path='/services' element={<Services />} />
+
+      {/* ProofReading Route */}
+      <Route path='/proofreading' element={<ProofReading />} />
+
+      {/* Podcast Route */}
+      <Route path='/Podcast' element={<Podcast />} />
+
+      {/* You can also add a catch-all route for 404 pages */}
+      {/* <Route path='*' element={<NotFoundPage />} /> */}
+    </Routes>
+      
         <FooterBar />
-    </Router>
+    
  </Fragment>
   
   );

@@ -13,13 +13,13 @@ function Podcast() {
         <div className="p-6">
             <img src={Spotify} alt="Spotify Titik Jeda" />           
             <button className="text-[#8F259F] font-bold py-3 w-full border border-[#8F259F] rounded-lg">
-            <a href="https://open.spotify.com/show/10QONIQfaOTHI1BGdpwXJw" target="_blank">Listen on Spotify</a> 
+            <a href="https://open.spotify.com/show/10QONIQfaOTHI1BGdpwXJw" target="_blank" rel="noopener noreferrer">Listen on Spotify</a> 
             </button>
         </div>
         <div className="p-6">
             <img src={ApplePodcast} alt="Apple Podcast Titik Jeda" />   
             <button className="text-[#8F259F] font-bold py-3 w-full border border-[#8F259F] rounded-lg">
-            <a href="https://podcasts.apple.com/us/podcast/titik-jeda/id1523230998" target="_blank">Listen on Apple Podcast</a> 
+            <a href="https://podcasts.apple.com/us/podcast/titik-jeda/id1523230998" target="_blank" rel="noopener noreferrer">Listen on Apple Podcast</a> 
             </button>
         </div>
      </div>

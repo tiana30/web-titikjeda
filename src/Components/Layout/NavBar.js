@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import TitikJedaLogo from '../../Images/logo.svg';
 
 function NavBar(){
